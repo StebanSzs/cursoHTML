@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos comunes</title>
+
+    <style>
+        .parrafo1 {
+            color: red;
+        }
+    </style>
+
+
+</head>
+  <!--
+    Algunos atributos globales que estan dispoble en todos los elementos HTML son:
+
+    class ==>
+    <p class="texto">Texto de ejemplo</p>
+
+    id ==>
+    <p id="parrafo">Texto de ejemplo</p>
+    no se puede repetir y debe ser unico
+
+    title ==>
+    <p title="Texto de ejemplo">Texto de ejemplo</p>
+    aparece cuando se pasa el mouse sobre el elemento en un tooltip 
+
+    data-* ==>
+    <p data-ejemplo="Texto de ejemplo">Texto de ejemplo</p>
+    -->
+<body>
+    <p class="parrafo1">Clases</p>
+    <p id="identificador">Identificador a traves de un id</p>
+    <p title="Esto es un ejemplo del atributo title">Title</p>
+    <p id="parrafo2" data-ejemplo="Datos de ejemplo">Datos pasados en la etiqueta</p> 
+
+    <script>
+        const p = document.getElementById('identificador');
+        const parrafo2 = document.getElementById('parrafo2');
+
+        console.log(p.textContent);
+        console.log(parrafo2.dataset.ejemplo);
+    </script>
+
+</body>
+</html>
