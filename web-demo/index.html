@@ -11,9 +11,28 @@
     Tienen el atributo href que indica la URL de destino, es decir, la direccion de la pagina a la que se quiere acceder.
 
     Tambien tiene el atributo target que indica donde se abrira la pagina, por defecto es _self, que indica que se abrira en la misma ventana, pero tambien puede ser _blank, que indica que se abrira en una nueva ventana.
+
+    Rutas relativas: son aquellas que se refieren a la ubicacion de un archivo en relacion con la ubicacion actual del archivo que contiene el enlace. 
+
+    No usan protocolo, dominio ni puerto.
+
+    Si el recurso se encuentra al mismo nivel que el archivo que contiene el enlace, se puede escribir el nombre del archivo directamente.
+    
+    Si el recurso se encuentra en un directorio diferente usaremos ../ para indicar que subimos un nivel en la jerarquia de directorios.
+    Se usa un . por cada nivel que se suba en la jerarquia de directorios.
+
+    Si el recurso se encuentra en una carpeta diferente, se debe indicar el nombre de la carpeta seguido de una barra y el nombre del archivo. asi: carpeta/archivo.html
+
+    Rutas absolutas: son aquellas que se refieren a la ubicacion de un archivo en relacion con la raiz del sitio web.
+
+    Atributos de los enlaces
+
+        target: indica donde se abrira la pagina, por defecto es _self, que indica que se abrira en la misma ventana, pero tambien puede ser _blank, que indica que se abrira en una nueva ventana.
+        
+        download: indica que el recurso se descargara en lugar de abrirse en el navegador. El recurso debe estar en el mismo dominio que la pagina que contiene el enlace.
 -->
 <body>
     <h1>Inicio</h1>
-    <a href="contacto.html">Ir a contacto</a>
+    <a href="paginas/contacto.html" >Ir a contacto</a>
 </body>
 </html>
