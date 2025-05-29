@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        col {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <!--Las tablas en HTML sirven para mostrar contenido tabulado
+        la estructura básica de una tabla es:
+        table -> etiqueta que encierra toda la tabla
+        tr -> etiqueta que define una fila de la tabla
+        th -> etiqueta que define una celda de encabezado
+        td -> etiqueta que define una celda de datos
+
+        Truco: el numero de celdas dentro de un tr establecera el numero de columnas de la tabla
+    -->
+
+    <!--
+        Atributos de las tablas:
+        - border: define el borde de la tabla
+        - cellpadding: define el espacio entre el borde de la celda y su contenido
+        - cellspacing: define el espacio entre las celdas de la tabla
+        - width: define el ancho de la tabla
+        - height: define la altura de la tabla
+        - align: define la alineación de la tabla (left, center, right)
+    -->
+
+    <h1>Tablas</h1>
+    <table> 
+        <caption>Horario de Clases</caption>
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody> 
+        <tr>
+            <td>8:30 - 9:30</td>
+            <td>Matematicas</td>
+            <td>Matematicas</td>
+            <td>Sociales</td>
+            <td>Matematicas</td>
+            <td>Matematicas</td>
+        </tr>
+        <tr>
+            <td>9:30 - 10:30</td>
+            <td>Lengua</td>
+            <td>Lengua</td>
+            <td>Matematicas</td>
+            <td>Ciencias</td>
+            <td>Lengua</td>
+        </tr>
+        <tr>
+            <td>10:30 - 11:30</td>
+            <td>Ingles</td>
+            <td>Ingles</td>
+            <td>Lengua</td>
+            <td>Matematicas</td>
+            <td>Ingles</td>
+        </tr>
+        <tr>
+            <td>11:30 - 12:30</td>
+            <td colspan="5">Recreo</td>
+        </tr>
+        <tr>
+            <td>12:30 - 13:30</td>
+            <td>Matematicas</td>
+            <td>Matematicas</td>
+            <td>Sociales</td>
+            <td>Ingles</td>
+            <td>Matematicas</td>
+        </tr>
+        <tr>
+            <td>13:30 - 14:30</td>
+            <td rowspan="2">Lengua</td>
+            <td>Lengua</td>
+            <td>Matematicas</td>
+            <td>Sociales</td>
+            <td rowspan="2">Ingles</td>
+        </tr>
+        <tr>
+            <td>14:30 - 15:30</td>
+            <td>Ingles</td>
+            <td>Lengua</td>
+            <td>Matematicas</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Total de asignaturas</td>
+                <td>6</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+</html>
