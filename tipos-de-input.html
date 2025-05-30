@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de input</title>
+</head>
+
+<!--  
+    input type:
+    
+    button: Representa un botón que el usuario puede hacer clic para realizar una acción específica, como enviar un formulario o ejecutar un script.
+    color: Representa un selector de color que permite al usuario elegir un color. Se muestra como un cuadro de selección de color.
+    date: Representa un campo de entrada para seleccionar una fecha. Se muestra como un selector de fecha que permite al usuario elegir una fecha específica.
+    datetime: Representa un campo de entrada para seleccionar una fecha y hora. Se muestra como un selector de fecha y hora que permite al usuario elegir una fecha y hora específicas. Esta obsoleto.
+    datetime-local: Representa un campo de entrada para seleccionar una fecha y hora local. Se muestra como un selector de fecha y hora que permite al usuario elegir una fecha y hora específicas en la zona horaria local. No funciona en firefox.
+    email: Representa un campo de entrada para ingresar una dirección de correo electrónico. Se valida automáticamente el formato del correo electrónico ingresado.
+    hidden: Representa un campo de entrada oculto que no es visible para el usuario, pero que se envía con el formulario. Se utiliza para almacenar datos que no deben ser visibles o editables por el usuario.
+    month: Representa un campo de entrada para seleccionar un mes y un año. Se muestra como un selector de mes que permite al usuario elegir un mes y un año específicos.
+    week: Representa un campo de entrada para seleccionar una semana específica. Se muestra como un selector de semana que permite al usuario elegir una semana específica del año.
+    number: Representa un campo de entrada para ingresar un número. Permite al usuario ingresar valores numéricos y puede tener restricciones como un rango mínimo y máximo.
+    password: Representa un campo de entrada para ingresar una contraseña. Los caracteres ingresados se ocultan para proteger la privacidad del usuario.
+    range: Representa un control deslizante que permite al usuario seleccionar un valor dentro de un rango específico. Se muestra como una barra deslizante que el usuario puede arrastrar para ajustar el valor.
+    reset: Representa un botón que restablece todos los campos del formulario a sus valores predeterminados. Se utiliza para borrar los datos ingresados por el usuario.
+    search: Representa un campo de entrada para realizar búsquedas. Se muestra como un cuadro de búsqueda que permite al usuario ingresar términos de búsqueda.
+    submit: Representa un botón que envía el formulario al servidor. Se utiliza para enviar los datos ingresados por el usuario al servidor para su procesamiento.
+    tel: Representa un campo de entrada para ingresar un número de teléfono. Se valida automáticamente el formato del número de teléfono ingresado.
+    text: Representa un campo de entrada de texto donde el usuario puede ingresar información. Es el tipo de entrada más común y se utiliza para capturar texto sin formato.
+    time: Representa un campo de entrada para seleccionar una hora específica. Se muestra como un selector de hora que permite al usuario elegir una hora específica.
+    url: Representa un campo de entrada para ingresar una URL (dirección web). Se valida automáticamente el formato de la URL ingresada.
+    week: Representa un campo de entrada para seleccionar una semana específica. Se muestra como un selector de semana que permite al usuario elegir una semana específica del año.
+ -->
+<body>
+
+    <form >
+        <input>
+        <input type="button" value="Enviar input">
+         <input type="submit" value="Enviar formulario">
+        <button>Enviar</button>
+    </form>
+
+    <form>
+        <input type="date">
+        <input type="datetime-local">
+        <input type="month">
+        <input type="week">
+        
+    </form>
+
+    <div>
+    <form>
+        <label> Search
+            <input type="search">
+        </label>
+    </div>
+    <div>
+        <label> Teléfono
+            <input type="tel">
+        </label>
+    </div>
+    <div>
+        <label> email
+            <input type="email">
+        </label>
+    </div>
+    <div>
+        <label> password
+            <input type="password">
+        </label>
+    </div>
+    <div>
+        <label> Url
+            <input type="url">
+        </label>
+    </div>
+    </form>
+
+    <form>
+        <input type="color">
+        <input type="number">
+        <input type="range" step="5" min="0" max="20">
+        <input type="reset">
+        <input type="text">
+    </form>
+    
+</body>
+</html>

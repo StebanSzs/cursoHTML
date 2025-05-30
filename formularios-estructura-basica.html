@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estuctura básica de un formulario</title>
+</head>
+
+<!--            
+    La estructura básica de un formulario HTML incluye las siguientes etiquetas:
+
+    form: Representa un formulario que contiene controles interactivos para que el usuario envíe datos al servidor. Se utiliza para agrupar los elementos del formulario y definir su acción y método de envío.
+    label: Representa una etiqueta para un control de formulario. Se utiliza para asociar un texto descriptivo con un campo de entrada, lo que mejora la accesibilidad y la usabilidad del formulario.
+    input: Representa un campo de entrada donde el usuario puede ingresar datos. Puede tener diferentes tipos, como texto, contraseña, correo electrónico, número, etc. Se utiliza para capturar información del usuario.
+    button: Representa un botón que el usuario puede hacer clic para enviar el formulario o realizar una acción específica. Puede tener diferentes tipos, como "submit" para enviar el formulario o "reset" para restablecer los campos del formulario.
+ -->
+<body>
+    <form action="enviar.html">
+        <label>Nombre</label>
+        <input>
+        <button>Enviar formulario</button>
+    </form> 
+</body>
+
+<!-- 
+     Asociar label a input
+    -->
+
+<body>
+    <form>
+        <label for="nombre">Nombre</label>
+        <input id="nombre">
+        <button>Enviar formulario</button>
+    </form> 
+</body>
+
+
+</html>

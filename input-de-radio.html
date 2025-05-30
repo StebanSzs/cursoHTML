@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs de radio</title>
+</head>
+
+<!--
+    radio: permite seleccionar una opción entre varias disponibles, pero solo una a la vez.
+
+    checkbox: permite seleccionar múltiples opciones entre varias disponibles.
+
+    select: permite seleccionar una opción de una lista desplegable.
+
+    Cada opción ira dento de una etiqueta de <option> </option>.
+
+    Si tenemos muchas opciones, podemos ordenarlas por categorías utilizando la etiqueta <optgroup> con el atributo label para nombrar cada grupo de categoría.
+-->
+<body>
+    <h1>Elementos seleccionables</h1>
+    <form>
+        <h2>Género</h2>
+        <label>Masculino
+        <input type="radio" name="gender" value="Masculino" checked>
+        </label>
+        <label>Femenino
+        <input type="radio" name="gender" value="Femenino">
+        </label>
+        <label>Otro
+        <input type="radio" name="gender" value="Otro">
+        </label>
+    </form>
+    
+</body>
+</html>
