@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input de select</title>
+</head>
+
+<!-- 
+    Radio: Permite seleccionar una opción entre varias.
+    Checkbox: Permite seleccionar múltiples opciones entre varias.
+    select: Permite seleccionar una opción de una lista desplegable.
+
+    cada opción irá dentro de una etiqueta <option> y el valor de la opción se define con el atributo value.
+    
+    Si tenemos muchas opciones podemo ordenarlas por categorias a través de la etiqueta <optgroup>. vcon el atributo label para nombrar la categoría.
+ -->
+<body>
+
+<h1>Elementos seleccionables</h1>
+    
+<!--  
+<div>
+    <form>
+      <select name="lenguajes1solo">
+        <option value="html">Html</option>
+        <option value="css">Css</option>
+        <option value="javascript">JavaScript</option>
+      </select>
+    </form>
+</div>
+<div>
+    <form>
+      <select name="lenguajesmultiple" multiple>
+        <option value="html">Html</option>
+        <option value="css">Css</option>
+        <option value="javascript">JavaScript</option>
+      </select>
+    </form>
+</div>
+-->
+
+<form>
+    <select name="mascotas">
+        <optgroup label="4 patas">
+        <option value="perro">Perro</option>
+        <option value="gato">Gato</option>
+        <option value="hamster">Hamster</option>
+        </optgroup>
+        <optgroup label="aves">
+        <option value="loro">Loro</option>
+        <option value="canario">Canario</option>
+        </optgroup>
+        <optgroup label="otros">
+        <option value="serpiente">Serpiente</option>
+        <option value="tarantula">Tarantula</option>
+        </optgroup>
+    </select>
+</form>
+
+</body>
+</html>
