@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mas elementos</title>
+</head>
+<!-- 
+    fieldset: Agrupa elementos relacionados dentro de un formulario.
+    legend: Proporciona un título para el fieldset, mejorando la accesibilidad y la comprensión del formulario.
+    file: Permite al usuario seleccionar un archivo de su sistema local para cargarlo en el servidor.
+    meter: Representa un control de entrada para valores numéricos, como barras de progreso o controles deslizantes.
+    progress: Muestra el progreso de una tarea en curso, como la carga de un archivo o la finalización de una operación.
+    textarea: Permite al usuario ingresar texto de varias líneas, ideal para comentarios o descripciones largas.
+ -->
+<body>
+    <form>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <div>
+                <label for="name">Nombre</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="surname">Apellidos</label>
+                <input type="text" id="surname">
+            </div>
+        </fieldset>
+        <input type="file">
+        <label for="fuel">Combustible</label>
+        <meter id="fuel" min="0" max="100" value="90" low="30" high="70" optimun="90">
+        </meter>
+        <label for="task">Tarea 1</label>
+        <progress id="task" max="100" value="70"></progress>
+        <label for="message">Mensaje</label>
+        <textarea name="" id="message" cols="10" rows="10"></textarea>
+    </form>
+</body>
+</html>
